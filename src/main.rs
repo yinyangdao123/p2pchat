@@ -4,7 +4,7 @@ use std::str::FromStr;
 use std::sync::{Arc, Mutex};
 use std::thread::{self, sleep};
 use std::time::Duration;
-use chapter7::app::App;
+use p2pchat::app::App;
 
 pub fn register_name(mut stream:TcpStream, local_name:String) {
     let msg = format!("0{}", local_name);
